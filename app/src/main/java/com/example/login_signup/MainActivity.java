@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
     TextView singupPage, loginPage;
 
@@ -17,6 +20,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//
+//
+//        FirebaseDatabase database=FirebaseDatabase.getInstance();
+//        DatabaseReference myRef=database.getReference("massage");
+//
+//        myRef.setValue("hello world");
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
 
         singupPage = findViewById(R.id.signuppage);
         loginPage = findViewById(R.id.loginpage);
@@ -24,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         singupPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, registerpage.class);
+                Intent intent = new Intent(MainActivity.this, SignUp.class);
                 startActivity(intent);
             }
         });
@@ -32,14 +42,10 @@ public class MainActivity extends AppCompatActivity {
         loginPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(MainActivity.this, login_page.class);
+                Intent intent =new Intent(MainActivity.this, LoginPage.class);
                 startActivity(intent);
             }
         });
-
-
-
-
 
     }
 }

@@ -23,11 +23,11 @@
             android:layout_marginTop="20dp"/>
 
         <EditText
-            android:id="@+id/firstname"
+            android:id="@+id/Name"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/customshape_editview"
-            android:hint="First Name"
+            android:hint=" Name"
             android:textColorHint="@color/white"
             android:inputType="text"
             android:textColor="@color/white"
@@ -35,11 +35,11 @@
             android:layout_marginTop="20dp"
             />
         <EditText
-            android:id="@+id/lastname"
+            android:id="@+id/UserName"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/customshape_editview"
-            android:hint="Last Name"
+            android:hint="User Name"
             android:textColorHint="@color/white"
             android:textColor="@color/white"
             android:inputType="text"
@@ -58,18 +58,19 @@
             android:layout_marginTop="20dp"
             android:padding="15dp"
             />
-        <EditText
-            android:id="@+id/phonenumber"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/customshape_editview"
-            android:hint="Phone"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white"
-            android:inputType="number"
-            android:layout_marginTop="20dp"
-            android:padding="15dp"
-            />
+        <!--        <EditText-->
+        <!--            android:id="@+id/phonenumber"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:background="@drawable/customshape_editview"-->
+        <!--            android:hint="Phone"-->
+        <!--            android:textColorHint="@color/white"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:inputType="number"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:padding="15dp"-->
+        <!--            />-->
+
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
@@ -82,18 +83,19 @@
             android:layout_marginTop="20dp"
             android:padding="15dp"
             />
-        <EditText
-            android:id="@+id/confirmpassword"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/customshape_editview"
-            android:hint="Confirm Password"
-            android:textColorHint="@color/white"
-            android:textColor="@color/white"
-            android:inputType="textPassword"
-            android:layout_marginTop="20dp"
-            android:padding="15dp"
-            />
+        <!--        <EditText-->
+        <!--            android:id="@+id/confirmpassword"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:background="@drawable/customshape_editview"-->
+        <!--            android:hint="Confirm Password"-->
+        <!--            android:textColorHint="@color/white"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:inputType="textPassword"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:padding="15dp"-->
+        <!--            />-->
+
         <Button
             android:id="@+id/signupbutton"
             android:layout_width="match_parent"
